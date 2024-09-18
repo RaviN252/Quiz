@@ -3,10 +3,11 @@ import React, { useState } from "react";
 import "../Components/Land.css";
 import Admin from "../Assets/admin.png";
 import User from "../Assets/user.png";
-import Modal from "./Modal"; // Corrected import path
+import Modal from "./Modal";
+import { Link } from "react-router-dom";
 
 function Land() {
-  const [showModalPopUp, setShowModalPopUp] = useState(false); // Fixed typo
+  const [showModalPopUp, setShowModalPopUp] = useState(false);
 
   const handleToggleModalPopup = () => {
     setShowModalPopUp((prevState) => !prevState);
@@ -19,7 +20,11 @@ function Land() {
         <div className="sub">
           <img src={User} alt="User" />
           <h2>User</h2>
-          <button>Play Game</button>
+          <button>
+            <Link to="/Game" id="navli">
+              Play Game
+            </Link>
+          </button>
         </div>
         <div className="sub">
           <img src={Admin} alt="Admin" />

@@ -1,11 +1,11 @@
-// src/Components/Modal.js
 import React, { useState } from "react";
 import "../Components/Modal.css";
-
+import { useNavigate } from "react-router-dom";
 export default function Modal({ onClose }) {
   const [userId, setUserId] = useState("");
   const [password, setPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -14,6 +14,7 @@ export default function Modal({ onClose }) {
       console.log("Login successful!");
       setErrorMessage("");
       onClose();
+      navigate("/Admin");
     } else {
       setErrorMessage("Invalid credentials. Please try again.");
     }

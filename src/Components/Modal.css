@@ -24,8 +24,10 @@
     position: relative;
   }
   input{
-    padding: 5px;
+    padding: 9px;
     margin: 5px;
+    width: 250px;
+    border-radius: 10px ;
   }
   .body{
     padding: 20%;
@@ -34,15 +36,18 @@
     margin-top: 10%;
     width: 100px;
     height: 40px;
-    margin: 2px;
+    margin: 10px;
     background-color: white;
   }
   .btn:hover{
-   border: 2px solid white;
+    border: 2px solid white;
     background-color: blue;
     color: white;
   }
-  
+  #navli{
+    text-decoration: none;
+    color: black;
+}
   
   
   

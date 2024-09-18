@@ -1,0 +1,13 @@
+.timer{
+    display: flex;
+}
+.timer h1{
+    color:blue;
+    font-size: 50px;
+    padding: 4px;
+}
+.timer img{
+    width:70px;
+    height: 70px;
+
+}
